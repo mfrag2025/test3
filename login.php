@@ -26,7 +26,7 @@ require_once "config.php";
 		$_SESSION['username'] = $row['username'];
 		$_SESSION["id"] = $id;
 		$_SESSION["username"] = $username;
-		header("Location: home.php");
+		header("Location: welcome.php");
 		exit();
 	}else {
 		header("Location: index.html");
