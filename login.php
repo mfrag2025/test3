@@ -22,7 +22,7 @@ require_once "config.php";
 	//Store result 
 	$row = mysqli_fetch_assoc($result);
 	
-	if ($row['username'] == $username && $row['password'] == $password) {
+	if ($row['username'] === $username && $row['password'] === $password) {
 		$_SESSION['username'] = $row['username'];
 		$_SESSION["id"] = $id;
 		$_SESSION["username"] = $username;
